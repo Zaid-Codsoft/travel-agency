@@ -32,42 +32,90 @@
 
 /* Apply the color scheme to common elements */
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
 }
 
-.navbar {
+/* Navbar Styles */
+.custom-navbar.navbar {
   background-color: var(--bg-dark) !important;
+  padding: 1rem 2rem;
+}
+
+.custom-navbar .navbar-brand {
   color: var(--text-light) !important;
 }
 
-.navbar-brand, .nav-link {
+.custom-navbar .navbar-nav .nav-link {
+  color: var(--text-light) !important;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover,
+.custom-navbar .navbar-nav .nav-link:focus {
+  background-color: var(--primary-blue-dark) !important;
   color: var(--text-light) !important;
 }
 
+.custom-navbar .navbar-toggler {
+  border-color: var(--text-light) !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Button Styles */
 .btn-primary {
   background-color: var(--primary-blue) !important;
   border-color: var(--primary-blue) !important;
+  color: var(--text-light) !important;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   background-color: var(--primary-blue-dark) !important;
   border-color: var(--primary-blue-dark) !important;
+  transform: translateY(-1px);
 }
 
+/* Card Styles */
 .card {
   border-color: var(--border-medium);
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .card-header {
   background-color: var(--secondary-blue);
-  border-bottom-color: var(--border-medium);
+  border-bottom: 1px solid var(--border-medium);
+  padding: 1rem 1.5rem;
 }
 
+/* Footer Styles */
 .footer {
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-light);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* Logo styles */
+.logo {
+  height: 40px;
+  width: auto;
 }
 
 /* Custom utility classes */
@@ -81,4 +129,21 @@ body {
 
 .border-blue {
   border-color: var(--border-dark) !important;
+}
+
+/* Additional Bootstrap overrides */
+.navbar-default {
+  background-color: var(--bg-dark) !important;
+  border-color: var(--bg-dark) !important;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: var(--text-light) !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: var(--text-light) !important;
+  background-color: var(--primary-blue-dark) !important;
 } 
