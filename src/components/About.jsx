@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Col, Image, Row } from 'react-bootstrap';
 import '../Styles/about.css'
 
-export default class About extends Component {
+export default class About extends React.Component {
     render() {
         return (
             <div>

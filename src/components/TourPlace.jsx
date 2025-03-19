@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Col, Button, Row, Card } from 'react-bootstrap';
 import '../Styles/home.css'
 
-export default class TourPlace extends Component {
+export default class TourPlace extends React.Component {
     render() {
         return (
             <Container>
