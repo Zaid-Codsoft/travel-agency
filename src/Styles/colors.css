@@ -1,0 +1,84 @@
+:root {
+  /* Primary Blue Colors */
+  --primary-blue: #1a73e8;
+  --primary-blue-light: #4285f4;
+  --primary-blue-dark: #1557b0;
+  
+  /* Secondary Blue Colors */
+  --secondary-blue: #e8f0fe;
+  --secondary-blue-light: #f8f9fa;
+  --secondary-blue-dark: #d2e3fc;
+  
+  /* Accent Colors */
+  --accent-blue: #34a853;
+  --accent-blue-light: #4caf50;
+  --accent-blue-dark: #2e7d32;
+  
+  /* Text Colors */
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --text-light: #ffffff;
+  
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-dark: #1a73e8;
+  
+  /* Border Colors */
+  --border-light: #dadce0;
+  --border-medium: #e8eaed;
+  --border-dark: #1a73e8;
+}
+
+/* Apply the color scheme to common elements */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.navbar {
+  background-color: var(--bg-dark) !important;
+  color: var(--text-light) !important;
+}
+
+.navbar-brand, .nav-link {
+  color: var(--text-light) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue) !important;
+  border-color: var(--primary-blue) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-blue-dark) !important;
+  border-color: var(--primary-blue-dark) !important;
+}
+
+.card {
+  border-color: var(--border-medium);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  background-color: var(--secondary-blue);
+  border-bottom-color: var(--border-medium);
+}
+
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-light);
+}
+
+/* Custom utility classes */
+.bg-blue-light {
+  background-color: var(--secondary-blue) !important;
+}
+
+.text-blue {
+  color: var(--primary-blue) !important;
+}
+
+.border-blue {
+  border-color: var(--border-dark) !important;
+} 

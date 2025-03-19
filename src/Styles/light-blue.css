@@ -1,0 +1,63 @@
+/* Light Blue Theme */
+body {
+    background-color: #f0f8ff; /* Alice Blue */
+}
+
+/* Main Content Background */
+.main-content {
+    background-color: #e6f3ff; /* Lighter Blue */
+    min-height: calc(100vh - 200px); /* Adjust based on your footer height */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #b3d9ff; /* Light Blue */
+    color: #333;
+    padding: 20px 0;
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #b3d9ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #4d94ff;
+    border-color: #4d94ff;
+}
+
+.btn-primary:hover {
+    background-color: #3385ff;
+    border-color: #3385ff;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #b3d9ff !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    color: #4d94ff !important;
+}
+
+/* Form Styles */
+.form-control {
+    border-color: #b3d9ff;
+}
+
+.form-control:focus {
+    border-color: #4d94ff;
+    box-shadow: 0 0 0 0.2rem rgba(77, 148, 255, 0.25);
+} 
