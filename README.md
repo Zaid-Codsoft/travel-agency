@@ -2,7 +2,7 @@
 
 A modern, responsive travel agency website showcasing Pakistan's beautiful destinations and travel services.
 
-![Pakistan Travel Agency](public/assets/img/winter.jpg)
+![Pakistan Travel Agency Screenshot](image.png)
 
 ## Features
 
