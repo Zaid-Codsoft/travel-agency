@@ -1,5 +1,5 @@
 .header{
-    background: URL('%PUBLIC_URL%/assets/img/winter.jpg') no-repeat center;
+    background: URL('../../public/assets/img/winter.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;

@@ -9,7 +9,7 @@ export default class TourPlace extends React.Component {
                 <Row className="show-grid text-center">
                     <Col xs={12} sm={4} className="place">
                         <Card>
-                            <Card.Img variant="top" src="/assets/img/places/spain.jpg" alt="Spain" />
+                            <Card.Img variant="top" src={process.env.PUBLIC_URL + '/assets/img/places/spain.jpg'} alt="Spain" />
                             <Card.Body>
                                 <Card.Title>Spain</Card.Title>
                                 <Card.Text>
@@ -22,7 +22,7 @@ export default class TourPlace extends React.Component {
 
                     <Col xs={12} sm={4} className="place">
                         <Card>
-                            <Card.Img variant="top" src="/assets/img/places/england.jpg" alt="United Kingdom" />
+                            <Card.Img variant="top" src={process.env.PUBLIC_URL + '/assets/img/places/england.jpg'} alt="United Kingdom" />
                             <Card.Body>
                                 <Card.Title>United Kingdom</Card.Title>
                                 <Card.Text>
@@ -35,7 +35,7 @@ export default class TourPlace extends React.Component {
 
                     <Col xs={12} sm={4} className="place">
                         <Card>
-                            <Card.Img variant="top" src="/assets/img/places/turkey.jpg" alt="Turkey" />
+                            <Card.Img variant="top" src={process.env.PUBLIC_URL + '/assets/img/places/turkey.jpg'} alt="Turkey" />
                             <Card.Body>
                                 <Card.Title>Turkey</Card.Title>
                                 <Card.Text>
